@@ -1,0 +1,443 @@
+/* Color Scheme - Analogous (Blue/Teal/Green) */
+/* #2A4B7C (dark blue) - #3B8EA5 (teal) - #4CB5AE (light teal) - #6FB07F (green) */
+
+
+/* Base Styles */
+:root {
+    --primary-color: #2A4B7C;
+    --secondary-color: #3B8EA5;
+    --accent-color: #4CB5AE;
+    --light-color: #6FB07F;
+    --text-color: #2a2929;
+    --light-text: #fff;
+    --container-width: 90%;
+    --line-height: 1.5;
+}
+
+/* Font Import from Google */
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans');
+
+/*general*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #2a2929;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bree Serif", serif;
+}
+
+h1 {
+    margin: 0.5rem;
+    text-align: center;
+
+}
+
+
+.wrapper {
+    max-width: 95%;
+    margin:auto;
+}
+
+/*logo*/
+.logo {
+    max-width: 20vw;
+    margin: auto;
+}
+
+.navbar::before {
+    content: "Creating Beautiful Digital Experiences";
+    display: block;
+    font-size: 2em;
+    font-weight: 800;
+    font-family: "Bree Serif", serif;
+    text-align: center;
+    padding: 1em;
+}
+
+.navbar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a {
+    width: 100%;
+    display: block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    background-color: #2A4B7C;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar li {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #3B8EA5;
+    color: #000;
+}
+
+.masthead {
+    display: none;
+}
+
+
+.home article {
+    margin-bottom: 2em;
+    border-bottom: solid #2A4B7C .05em;
+}
+
+.home h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #2A4B7C;
+}
+
+.home p {
+    margin-bottom: 1em;
+}
+
+
+.home figure {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+figure img {
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+  
+
+figure img:hover {
+    box-shadow: 0 0 10px #2A4B7C;
+}
+
+
+.home figcaption {
+    text-align: center;
+    padding: 0.75em;
+    color: #2A4B7C;
+}
+
+
+.fig-port {
+    width: 100%;
+}
+
+
+.fig-port {
+    max-width: 100%;
+    margin-bottom: 4em;
+    padding: 0.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+figcaption {
+    margin: 1rem 0;
+}
+
+  
+figcaption {
+    padding: 0.75em;
+    color: #2A4B7C;
+    text-align: center;
+}
+  
+.wrapper-port {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px;
+    padding-bottom: 2em;
+}
+  
+.port-heading {
+    margin: 1em;
+    padding-bottom: 0.5em;
+    color: #2A4B7C;
+    text-align: center;
+}
+  
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.footer-wrapper p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 0;
+    margin-bottom: 1em; 
+    color: #4CB5AE;
+}
+
+
+/* ============ MEDIA QUERIES ================ */
+@media only screen and (min-width: 35rem) {
+    body {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .logo {
+        max-width: 15vw;
+        margin: auto;
+        padding-bottom: 1em;
+    }
+
+    .masthead {
+        display: flex;
+        position: relative;
+        background-image: url('../img/bunny.jpg');
+        background-size: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        margin: 1em 0;
+    
+    }
+
+    .masthead .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .masthead h1 {
+        font-family: "Bree Serif", serif;
+        padding: 1em;
+        font-size: 1rem;
+        color:  #141313;
+        text-shadow: 2px 2px 8px rgba(130, 129, 129, 0.7);
+        
+    }
+
+    .navbar::before {
+        display: none;
+
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4em;
+
+    }
+
+    .navbar li {
+        width: auto;
+        flex: 1 0 auto;
+    }
+
+    .navbar a {
+        padding: 0.8rem 1rem;
+    }
+
+    .home figure{
+        max-width: 40%;
+        float: left;
+        margin-right: 1em;
+        
+    }
+
+
+    .home article::after {
+        content: "";
+        clear: both;
+        display: block;
+
+    }
+
+    .home figcaption{
+        text-align: left;
+    }
+
+
+    .home h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: 0.5em;
+    }
+
+
+    .wrapper-port {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+    }
+
+
+    .port-heading {
+        text-align: center;
+    }
+
+
+    .fig-port {
+        margin-bottom: 2em;
+    }
+
+
+    /* Footer */
+    .footer-wrapper p {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .socials {
+        gap: 3em;
+        font-size: 1.2em;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 80rem) {
+    .wrapper {
+      max-width: 80%;
+      margin: auto;
+      padding: 2em 0;
+    }
+
+    body {
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+
+    header .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .logo {
+        align-items: left;
+        margin: 0;
+        max-width: 6em;
+    }
+
+    .navbar ul {
+        gap: 2em;
+    }
+
+    .navbar a{
+        min-width: 10em;
+    }
+
+    .masthead {
+        height: 50vh;
+      }
+      .masthead h1 {
+        font-size: 3rem;
+    }
+
+    .home h2 {
+        text-align: left;
+    }
+
+    .home figcaption {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .home p{
+        max-width: calc(60% - 2em);
+        float: right;
+    }
+
+    .wrapper-port {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+
+    .port-heading {
+        text-align: left;
+    }
+
+    a {
+        margin: 1em;
+    }
+    
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1em;
+        padding-top: 0;
+    }
+
+    .company-info p {
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
